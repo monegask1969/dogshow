@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" th:href="@{/css/main.css}"
+          href="../../css/main.css" />
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Dog Show <font color="red">Project</font></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="container-fluid">
+        <h1>Sign In</h1>
+        <div class="form-group">
+            <label for="signEmail">Email address</label>
+            <input type="email" class="form-control" id="signEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="signPas">Password</label>
+            <input type="password" class="form-control" id="signPas" placeholder="Password">
+        </div>
+        <button type="button" class="btn btn-success">Sign In</button>
+    </div>
+    <div class="container-fluid">
+        <h1>Sign Up</h1>
+        <div class="form-group">
+            <label for="regEmail">Email address</label>
+            <input type="email" class="form-control" id="regEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="regFname">Password</label>
+            <input type="text" class="form-control" id="regFname" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="regSname">Password</label>
+            <input type="text" class="form-control" id="regSname" placeholder="Second Name">
+        </div>
+        <div class="form-group">
+            <label for="regPas">Password</label>
+            <input type="password" class="form-control" id="regPas" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="regPasConf">Password</label>
+            <input type="password" class="form-control" id="regPasConf" placeholder="Confirm Password">
+        </div>
+        <button type="button" class="btn btn-success">Sign Up</button>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<script type="text/javascript"
+        src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
